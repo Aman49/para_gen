@@ -14,6 +14,12 @@ const generateWord = (n) => {
 const getData = () => {
     numOfWords = Number(input.value);
     const para = document.createElement('p');
+    let data = '';
+    for(let i=0; i<numOfWords; i++) {
+        const randomNum = (Math.random()*15).toFixed(0);
+        data += generateWord(randomNum);
+        data += " ";
+    }
     para.innerText = 'sample';
     para.setAttribute('class', 'paras')
     container.append(para)
