@@ -20,7 +20,7 @@ const getData = () => {
         data += generateWord(randomNum);
         data += " ";
     }
-    para.innerText = 'sample';
+    para.innerText = data;
     para.setAttribute('class', 'paras')
     container.append(para)
 }
